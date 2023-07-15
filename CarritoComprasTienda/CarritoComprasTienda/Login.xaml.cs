@@ -36,5 +36,10 @@ namespace CarritoComprasTienda
             txtUsuario.Text = "";
             txtContraseña.Text = "";
         }
+
+        private void btnRegistrar_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
