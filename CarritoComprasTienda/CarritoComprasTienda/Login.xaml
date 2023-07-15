@@ -4,9 +4,26 @@
              x:Class="CarritoComprasTienda.Login">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Supermarket Santa Isabel"  HorizontalTextAlignment="Center" FontSize="24"/>
+            <Label Text="Ventana de login"  HorizontalTextAlignment="Center" FontSize="24"/>
+            <Image Source="https://www.doolinns.com/wp-content/uploads/2019/06/login-logo-png-6.png"></Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="USUARIO"  Grid.Row="0" Grid.Column="0"></Label>
+                <Label Text="CONTRASEÑA" Grid.Row="1" Grid.Column="0"></Label>
+                <Button x:Name="btnIniciar" Text="INICIAR SESION" Clicked="btnIniciar_Clicked"  Grid.Row="2" Grid.Column="0"></Button>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario" Grid.Row="0" Grid.Column="1"></Entry>
+                <Entry x:Name="txtContraseña" Placeholder="Ingrese su contraseña" Grid.Row="1" Grid.Column="1" IsPassword="True"></Entry>
+                <Button x:Name="btnCancelar" Text="CANCELAR" Clicked="btnCancelar_Clicked"  Grid.Row="2" Grid.Column="1"></Button>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
