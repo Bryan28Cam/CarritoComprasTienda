@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CarritoComprasTienda.Login">
+             x:Class="CarritoComprasTienda.MainPage">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Supermarket Santa Isabel"  HorizontalTextAlignment="Center" FontSize="24"/>
@@ -19,11 +19,12 @@
                 </Grid.ColumnDefinitions>
                 <Label Text="CORREO"  Grid.Row="0" Grid.Column="0"></Label>
                 <Label Text="CONTRASEÑA" Grid.Row="1" Grid.Column="0"></Label>
-                <Button x:Name="btnIniciar" Text="INICIAR SESION" Clicked="btnIniciar_Clicked"  Grid.Row="2" Grid.Column="0"></Button>
+                <Button x:Name="btnIniciar" Text="INICIAR SESION" Clicked="btnIniciar_Clicked" Grid.Row="2" Grid.Column="0"></Button>
                 <Entry x:Name="txtUsuario" Placeholder="Ingresar correo" Grid.Row="0" Grid.Column="1"></Entry>
                 <Entry x:Name="txtContraseña" Placeholder="Ingrese su contraseña" Grid.Row="1" Grid.Column="1" IsPassword="True"></Entry>
-                <!--Button x:Name="btnCancelar" Text="CANCELAR" Clicked="btnCancelar_Clicked"  Grid.Row="2" Grid.Column="1"></Button-->
+                <Button x:Name="btnCancelar" Text="CANCELAR" Clicked="btnCancelar_Clicked"  Grid.Row="2" Grid.Column="1"></Button>
             </Grid>
+            <BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"></BoxView>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
@@ -39,7 +40,6 @@
                 <Button x:Name="btnRegistrar" Text="REGISTRAR" Clicked="btnRegistrar_Clicked"  Grid.Row="2" Grid.Column="0"></Button>
                 <Entry x:Name="txtNuevoUsuario" Placeholder="Ingresar correo" Grid.Row="0" Grid.Column="1"></Entry>
                 <Entry x:Name="txtNuevaContraseña" Placeholder="Ingrese su contraseña" Grid.Row="1" Grid.Column="1" IsPassword="True"></Entry>
-                <!--Button x:Name="btnCancelar" Text="CANCELAR" Clicked="btnCancelar_Clicked"  Grid.Row="2" Grid.Column="1"></Button-->
             </Grid>
         </StackLayout>
     </ContentPage.Content>
